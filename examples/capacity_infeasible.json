@@ -1,0 +1,17 @@
+{
+  "target": "T",
+  "links": [
+    {"id": "L1", "a": "T", "b": "A", "new_cost": 10, "bandwidth": 100},
+    {"id": "L2", "a": "T", "b": "B", "new_cost": 10, "bandwidth": 100},
+    {"id": "L3", "a": "A", "b": "C", "new_cost": 10, "bandwidth": 40},
+    {"id": "L4", "a": "B", "b": "C", "new_cost": 10, "bandwidth": 40},
+    {"id": "L5", "a": "A", "b": "B", "new_cost": 10, "bandwidth": 100}
+  ],
+  "conduits": [
+    {"id": "P1", "links": ["L1", "L3"]},
+    {"id": "P2", "links": ["L2", "L4"]}
+  ],
+  "existing": [
+    {"router": "C", "rate": 100}
+  ]
+}
